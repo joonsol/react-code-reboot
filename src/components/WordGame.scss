@@ -1,0 +1,78 @@
+// 색상 변수
+$m-color: #007bff;
+$hv-color: #0056b3;
+$bdr-color: #ccc;
+$t-color: #333;
+$msg-color: #666;
+
+// 폰트 크기 및 규격 변수
+$fs-large: 32px;
+$fs-medium: 24px;
+$fs-small: 16px;
+$bdr-radius: 5px;
+$pd-small: 10px;
+$pd-default: 20px;
+$mg-default: 20px;
+
+//effect
+
+
+// 게임 컨테이너 스타일
+.game-container {
+  text-align: center;
+  margin-top: $mg-default;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  padding: $pd-default  ;
+  border-radius: $bdr-radius;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.158);
+
+  h2 {
+    font-size: $fs-medium;
+    color: $t-color;
+  }
+
+  .current-word {
+    font-size: $fs-large;
+    font-weight: bold;
+    color: $m-color;
+    margin: $mg-default 0;
+  }
+
+  input {
+    width: 200px;
+    padding: $pd-small;
+    font-size: $fs-small;
+    border: 2px solid $bdr-color;
+    border-radius: $bdr-radius;
+    outline: none;
+    transition: border 0.3s;
+
+    &:focus {
+      border-radius: $m-color;
+    }
+  }
+
+  button {
+    margin-left: 10px;
+    padding: $pd-small $pd-small * 2;
+    font-size: $fs-small;
+    border: none;
+    border-radius: $bdr-radius;
+    background-color: $m-color;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+      background-color: $hv-color;
+    }
+  }
+
+  .message {
+    margin-top: 10px;
+    font-size: $fs-small;
+    font-weight: bold;
+    color: $msg-color;
+  }
+}
